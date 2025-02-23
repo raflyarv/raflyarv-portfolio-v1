@@ -1,0 +1,53 @@
+{
+  "experiences": [
+    {
+      "period": {
+        "start": "2024-01",
+        "end": "2024-07"
+      },
+      "position": "Front End Developer Intern",
+      "company": "PT Bank Central Asia, Tbk",
+      "description": "Led the end-to-end redesign and redevelopment of a Web Shell App, a critical interface for collaboration partners to test BCA's API products (OneKlik, Sakuku, Magna Carta, etc) for a 6-month period.",
+      "builtWith": [
+        "TypeScript",
+        "Next.js",
+        "Material UI",
+        "Podman",
+        "Red Hat OpenShift Container Platform"
+      ]
+    },
+    {
+      "period": { "start": "2023-08", "end": "2024-11" },
+      "position": "UI/UX Designer (Research)",
+      "company": "Tarumanagara University",
+      "description": "Collaborated with the product team to design intuitive user interfaces and experiences, increasing user engagement by 20%.",
+      "builtWith": ["Figma", "ClickUp", "Canva Pro"]
+    },
+    {
+      "period": { "start": "2023-08", "end": "2023-12" },
+      "position": "Front End Programming Lab Instructor",
+      "company": "Tarumanagara University",
+      "description": "Guided 58 computer science students in essential web development languages: HTML, CSS, and Javascript. Provided a solid foundation in AngularJS as the primary web development framework.",
+      "builtWith": ["HTML", "CSS", "AngularJS", "JavaScript"]
+    },
+    {
+      "period": { "start": "2023-08", "end": "2023-12" },
+      "position": "Web Development Lab Instructor",
+      "company": "Tarumanagara University",
+      "description": "Instructed 125 students in UI/UX design through across diverse faculties through drag-and-drop website editing. Successfully Demonstrated digital transformation in various industries through student projects involved direct interaction with SMEs.",
+      "builtWith": ["Figma", "Wix Website Builder", "HTML", "CSS"]
+    },
+    {
+      "period": { "start": "2023-08", "end": "2023-12" },
+      "position": "Oracle Database Administrator Lab Instructor",
+      "company": "Tarumanagara University",
+      "description": "Instructed 20+ computer science students on how to operate Oracle Database using Linux operated via VirtualBox and implemented an Oracle SQL queries through command line using Linux.",
+      "builtWith": [
+        "Oracle Database",
+        "Oracle SQL Developer",
+        "Linux",
+        "VirtualBox"
+      ]
+    }
+  ]
+}

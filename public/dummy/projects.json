@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "year": "2024",
+      "previewImg": "/thumbnails/projects/vicara-app.png",
+      "name": "VICARA 3.0 Mobile App - SlateARV Theme",
+      "role": "UI/UX Designer",
+      "organization": "Tarumanagara University",
+      "description": "Designing a suitable mobile app for children with Autism Spectrum Disorder that has a trouble in communication.",
+      "device": "Mobile"
+    },
+    {
+      "year": "2022",
+      "previewImg": "/thumbnails/projects/comphy-web.png",
+      "name": "Comphy (Community Photography)",
+      "role": "Front End Developer",
+      "organization": "SYNRGY Academy Batch Grab",
+      "description": "Designing a suitable mobile sapp for children with Autism Spectrum Disorder that has a trouble in communication.",
+      "device": "Web"
+    },
+    {
+      "year": "2022",
+      "previewImg": "/thumbnails/projects/eksplor-laweyan.png",
+      "name": "Eksplor Laweyan App",
+      "role": "UI/UX Designer & Front End Developer",
+      "organization": "Tarumanagara University",
+      "description": "Designing a suitable mobile sapp for children with Autism Spectrum Disorder that has a trouble in communication.",
+      "device": "Mobile"
+    }
+  ]
+}
