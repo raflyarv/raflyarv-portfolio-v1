@@ -1,0 +1,25 @@
+{
+  "projectArchive": [
+    {
+      "title": "Web Shell App 3.0",
+      "subtitle": "Part of IT BCA Internship",
+      "description": "Redesigned and redeveloped a Web Shell App to enhance API testing for collaboration partners, aligned with microservices architecture standards.",
+      "builtWith": [
+        "Next.js",
+        "Material UI",
+        "Podman",
+        "Red Hat OpenShift Container Platform"
+      ],
+      "githubLink": "",
+      "link": ""
+    },
+    {
+      "title": "Evanindo Colorlib's (Evanindo Wisata) - Travelo Web Mockup",
+      "subtitle": "Part of Web Development Uni Course",
+      "description": "Consists of duplicate and modified Colorlib's Travelo web mockup with a travel agency which i freelancing to, Evanindo Wisata. Using mostly HTML, pure CSS, and a little bit of Javascript as a main qualification to pass this project.",
+      "builtWith": ["HTML", "CSS", "JavaScript"],
+      "githubLink": "",
+      "link": ""
+    }
+  ]
+}
