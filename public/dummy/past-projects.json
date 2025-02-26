@@ -14,10 +14,32 @@
       "link": ""
     },
     {
-      "title": "Evanindo Colorlib's (Evanindo Wisata) - Travelo Web Mockup",
+      "title": "Eksplor Laweyan - Web Admin",
+      "subtitle": "Part of Thesis Project and Research",
+      "description": "Lorem ipsum bla bla bla nanti diisi ya pake data yang bener hihihihi",
+      "builtWith": [
+        "Next.js",
+        "TypeScript",
+        "Material UI",
+        "MongoDB",
+        "NodeJS"
+      ],
+      "githubLink": "",
+      "link": ""
+    },
+    {
+      "title": "Evanindo Colorlib's - Travelo Web Mockup",
       "subtitle": "Part of Web Development Uni Course",
       "description": "Consists of duplicate and modified Colorlib's Travelo web mockup with a travel agency which i freelancing to, Evanindo Wisata. Using mostly HTML, pure CSS, and a little bit of Javascript as a main qualification to pass this project.",
       "builtWith": ["HTML", "CSS", "JavaScript"],
+      "githubLink": "",
+      "link": ""
+    },
+    {
+      "title": "FTI Access Mobile App",
+      "subtitle": "Part of Software Development Uni Course",
+      "description": "Lorem ipsum bla bla bla nanti diisi ya pake data yang bener hihihihi",
+      "builtWith": ["Figma", "Canva Pro", "ClickUp"],
       "githubLink": "",
       "link": ""
     }

@@ -38,7 +38,7 @@ export default function ExperienceSection() {
                 View Full Resume
                 <span className="absolute bottom-0 left-0 h-0.5 bg-white w-0 transition-all duration-300 group-hover:w-full"></span>
               </p>
-              <ArrowUpRightIcon className="size-4 group-hover:text-white transition-colors duration-300" />
+              <ArrowUpRightIcon className="size-4 group-hover:-translate-y-1 group-hover:text-white transition-all duration-300" />
             </Link>
             {/* Line */}
             <span className="h-0.5 w-[25%] lg:w-[50%] bg-yellow-500 transition-all duration-300 group-hover:bg-white group-hover:lg:w-[70%] group-hover:w-[35%]"></span>

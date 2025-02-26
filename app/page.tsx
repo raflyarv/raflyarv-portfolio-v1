@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import { ExperienceSection, ProjectSection } from "./sections";
-import { StickySectionHeader } from "./components";
+import { MainFooter, StickySectionHeader } from "./components";
 import { useEffect, useState } from "react";
 import { CheckIcon } from "@heroicons/react/16/solid";
 
@@ -37,27 +37,41 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-w-screen min-h-screen grid lg:grid-cols-[1fr_2fr] scroll-smooth">
+    <div className="min-w-screen max-w-[100rem] mx-auto min-h-screen grid lg:grid-cols-[1fr_2fr] scroll-smooth">
       {/* Left Column */}
       <aside className="lg:p-20 p-10 lg:h-screen lg:sticky lg:top-0 flex-col justify-start content-center">
         <p className="text-sm mb-1">
-          <span className="text-white">
+          <span className="text-white opacity-50">
             {"<"}
             <span className="text-red-500">{"h1"}</span>
             {">"}
           </span>{" "}
           {"Hello World! I'm,"}{" "}
-          <span className="text-white">
-            {"<"}
+          <span className="text-white opacity-50">
+            {"</"}
             <span className="text-red-500">{"h1"}</span>
-            {"/>"}
+            {">"}
           </span>
         </p>
-        <p
-          className={`text-4xl text-white ${inter.className} font-semibold mb-3`}
-        >
-          Muhammad T Rafly
-        </p>
+        <div className="relative flex mb-4">
+          <p
+            className={`relative lg:flex text-4xl text-white ${inter.className} font-semibold`}
+          >
+            Muhammad T{" "}
+            <span className="lg:flex relative lg:ml-2">
+              {" "}
+              Rafly
+              <Image
+                src={"/arv-trademark.svg"}
+                alt="RaflyARV"
+                width={250}
+                height={250}
+                className="absolute inset-0 translate-x-16 -translate-y-6 scale-150 lg:translate-x-16 lg:-translate-y-6"
+              />
+            </span>
+          </p>
+        </div>
+
         <p className="text-sm mb-5">Front End Developer, UI/UX Designer</p>
 
         <nav className="hidden lg:flex w-full backdrop-blur-md mb-5">
@@ -198,9 +212,9 @@ export default function Home() {
                 innovative development teams.
               </p>
               <span className="text-white absolute -translate-y-5 -translate-x-6 opacity-50">
-                {"<"}
+                {"</"}
                 <span className="text-red-500">{"p"}</span>
-                {"/>"}
+                {">"}
               </span>{" "}
             </div>
 
@@ -213,7 +227,7 @@ export default function Home() {
                   alt="Profile"
                   width={300}
                   height={300}
-                  className="rounded-md transition-all group-hover:grayscale-0 group-hover:mix-blend-normal group-hover:-translate-y-1 group-hover:-translate-x-1"
+                  className="rounded-md inset-0 transition-all group-hover:grayscale-0 group-hover:mix-blend-normal group-hover:-translate-y-1 group-hover:-translate-x-1"
                 />
                 <div className="rounded-md absolute inset-0 bg-[#f8e559] mix-blend-multiply group-hover:opacity-0 transition-opacity"></div>
               </div>
@@ -229,21 +243,7 @@ export default function Home() {
           <ProjectSection />
         </section>
 
-        <footer className="flex flex-col px-8 mt-10">
-          <div className="w-full mb-3 flex items-center justify-between">
-            <div className="h-0.5 w-[40%] lg:w-[80%] bg-white"></div>
-            <p className="text-sm"> 2025 | RaflyARV </p>
-          </div>
-          <p className="text-xs text-[--text-secondary]">
-            Designed with inspiration from the masters, built with{" "}
-            <span className="text-[--foreground]"> Next.js </span> styled with{" "}
-            <span className="text-[--foreground]"> Tailwind CSS </span> and
-            powered by <span className="text-[--foreground]"> TypeScript</span>
-            —crafted by
-            <span className="text-[--foreground]"> Muhammad T Rafly </span> with
-            a dash of creativity and a nod to the experts!
-          </p>
-        </footer>
+        <MainFooter />
       </main>
     </div>
   );

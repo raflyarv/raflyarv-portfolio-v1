@@ -25,7 +25,7 @@ export default function ArchiveProjectsCard({
   projectArchive,
 }: ProjectArchiveProps) {
   return (
-    <div className="w-[22rem] h-fit bg-[--darkerBackground] rounded-md flex flex-col py-8 px-6">
+    <div className="w-[19rem] box-content h-auto bg-[--darkerBackground] justify-start rounded-md flex flex-col py-8 px-6 group lg:hover:-translate-y-4 hover:shadow-lg transition-all duration-300">
       <div className="flex items-start justify-between mb-5">
         <Image
           alt="Folder"
@@ -52,7 +52,7 @@ export default function ArchiveProjectsCard({
       </div>
 
       <div className="flex flex-col mb-4">
-        <p className="bg-[--foreground] text-[--background] px-2 w-fit mb-1 font-semibold">
+        <p className="bg-[--foreground] text-[--background] lg:group-hover:bg-[--background] lg:group-hover:text-[--foreground] transition-all duration-300  px-2 w-fit mb-1 font-semibold">
           {" "}
           {projectArchive.title}
         </p>
@@ -62,17 +62,19 @@ export default function ArchiveProjectsCard({
         </p>
       </div>
 
-      <p
-        className={`${inter.className} text-base font-medium text-[--text-secondary] mb-5`}
-      >
-        {" "}
-        {projectArchive.description}
-      </p>
+      <div className="flex flex-col justify-between h-full">
+        <p
+          className={`${inter.className} text-base font-medium text-[--text-secondary] mb-5`}
+        >
+          {" "}
+          {projectArchive.description}
+        </p>
 
-      <div className="text-xs text-[--text-secondary] flex flex-wrap gap-x-5 gap-y-1 opacity-70">
-        {projectArchive.builtWith.map((tech, index) => (
-          <p key={index}> {tech} </p>
-        ))}
+        <div className="text-xs text-[--text-secondary] flex flex-wrap gap-x-5 gap-y-1 opacity-70">
+          {projectArchive.builtWith.map((tech, index) => (
+            <p key={index}> {tech} </p>
+          ))}
+        </div>
       </div>
     </div>
   );
