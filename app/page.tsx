@@ -7,6 +7,13 @@ import { ExperienceSection, ProjectSection } from "./sections";
 import { MainFooter, StickySectionHeader } from "./components";
 import { useEffect, useState } from "react";
 import { CheckIcon } from "@heroicons/react/16/solid";
+import {
+  Description,
+  Dialog,
+  DialogBackdrop,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,6 +22,7 @@ const inter = Inter({
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("about-me");
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +74,8 @@ export default function Home() {
                 alt="RaflyARV"
                 width={250}
                 height={250}
-                className="absolute inset-0 translate-x-16 -translate-y-6 scale-150 lg:translate-x-16 lg:-translate-y-6"
+                onDoubleClick={() => setIsOpen(true)}
+                className="absolute cursor-pointer inset-0 translate-x-16 -translate-y-6 scale-150 lg:translate-x-16 lg:-translate-y-6"
               />
             </span>
           </p>
@@ -219,7 +228,7 @@ export default function Home() {
             </div>
 
             <div className="group relative inline-block">
-              <div className="absolute pointer-events-none inset-0 w-[300px] h-[300px] border-2 border-[--foreground] rounded-md translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform"></div>
+              <div className="absolute pointer-events-none inset-0 w-[300px] h-[300px] border-2 border-[--foreground] rounded-md translate-x-3 translate-y-3 lg:translate-x-1 lg:translate-y-1 lg:group-hover:translate-x-3 lg:group-hover:translate-y-3 transition-transform"></div>
               {/* Image */}
               <div className="relative z-5">
                 <Image
@@ -227,9 +236,9 @@ export default function Home() {
                   alt="Profile"
                   width={300}
                   height={300}
-                  className="rounded-md inset-0 transition-all group-hover:grayscale-0 group-hover:mix-blend-normal group-hover:-translate-y-1 group-hover:-translate-x-1"
+                  className="rounded-md inset-0 transition-all group-hover:grayscale-0 group-hover:mix-blend-normal lg:group-hover:-translate-y-1 lg:group-hover:-translate-x-1"
                 />
-                <div className="rounded-md absolute inset-0 bg-[#f8e559] mix-blend-multiply group-hover:opacity-0 transition-opacity"></div>
+                <div className="hidden rounded-md lg:block absolute inset-0 bg-[#f8e559] mix-blend-multiply group-hover:opacity-0 transition-opacity"></div>
               </div>
             </div>
           </div>
@@ -244,6 +253,39 @@ export default function Home() {
         </section>
 
         <MainFooter />
+
+        <Dialog
+          open={isOpen}
+          onClose={() => setIsOpen(false)}
+          transition
+          className="relative z-50"
+        >
+          <DialogBackdrop
+            transition
+            className="fixed inset-0 bg-[#332941]/75 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
+          />
+          <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className={
+                "max-w-lg relative transform overflow-hidden space-y-4 border border-[--foreground] bg-[--background]/70 backdrop-blur-lg rounded-md lg:p-12 p-8 transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
+              }
+            >
+              <DialogTitle className={`font-bold ${inter.className}`}>
+                {" "}
+                What is ARV?{" "}
+              </DialogTitle>
+              <Description>
+                {" "}
+                This will be a description about ARV acronym in my name and
+                other branding.{" "}
+              </Description>
+              <div className="flex">
+                <button onClick={() => setIsOpen(false)}> Okay! </button>
+              </div>
+            </DialogPanel>
+          </div>
+        </Dialog>
       </main>
     </div>
   );

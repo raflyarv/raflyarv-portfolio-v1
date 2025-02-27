@@ -20,7 +20,7 @@ export default function ProjectArchive() {
         </h1>
       </div>
 
-      <div className="w-fit px-8 lg:px-0 mb-5">
+      <div className="w-fit px-8 lg:px-4 mb-5">
         <p className="text-xs lg:text-sm text-white">
           {" "}
           Past projects that i&#39;ve worked on—
