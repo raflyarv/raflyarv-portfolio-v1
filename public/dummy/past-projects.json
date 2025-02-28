@@ -16,7 +16,7 @@
     {
       "title": "Eksplor Laweyan - Web Admin",
       "subtitle": "Part of Thesis Project and Research",
-      "description": "Lorem ipsum bla bla bla nanti diisi ya pake data yang bener hihihihi",
+      "description": "Developed a web-based dashboard for batik tenant sellers to manage data displayed on the Eksplor Laweyan mobile app, enabling seamless integration and efficient data management.",
       "builtWith": [
         "Next.js",
         "TypeScript",

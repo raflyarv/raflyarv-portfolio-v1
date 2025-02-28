@@ -15,6 +15,7 @@ interface ProjectData {
   organization: string;
   description: string;
   device: string;
+  builtWith: string[];
 }
 
 interface ProjectProps {
@@ -25,7 +26,7 @@ export default function ProjectsCard({ project }: ProjectProps) {
   return (
     <>
       <div
-        className={`group w-full items-center flex flex-col lg:flex-row lg:justify-between mb-10 rounded-md transition-all ease-in-out 
+        className={`group w-full py-2 items-center flex flex-col lg:flex-row lg:justify-between mb-10 rounded-md transition-all ease-in-out 
    backdrop-blur-md hover:lg:bg-white/10 hover:lg:shadow-lg ${
      project.device !== "Mobile" ? "lg:flex-row-reverse" : ""
    }`}
@@ -53,9 +54,24 @@ export default function ProjectsCard({ project }: ProjectProps) {
             </p>
           </div>
 
-          <p className={`${inter.className} text-[--text-secondary] lg:pr-4`}>
+          <p
+            className={`${inter.className} text-[--text-secondary] lg:pr-4 mb-3`}
+          >
             {project.description}
           </p>
+
+          <p className="text-sm mb-2"> Built with: </p>
+
+          <div className="flex flex-wrap gap-2">
+            {project.builtWith.map((tech, index) => (
+              <p
+                key={index}
+                className="inline-flex items-center rounded-sm bg-[--darkerBackground] py-1.5 px-3 text-xs text-[--text-secondary] shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+              >
+                {tech}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </>

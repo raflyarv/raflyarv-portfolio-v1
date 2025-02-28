@@ -6,8 +6,9 @@
       "name": "VICARA 3.0 Mobile App - SlateARV Theme",
       "role": "UI/UX Designer",
       "organization": "Tarumanagara University",
-      "description": "Designing a suitable mobile app for children with Autism Spectrum Disorder that has a trouble in communication.",
-      "device": "Mobile"
+      "description": "A mobile application tailored for children and young adults with Autism Spectrum Disorder (ASD) who face communication challenges. This app integrates the Fitzgerald Color System, ensuring a structured and visual approach to language development. The design was shaped by FGDs with linguistics and psychology experts, creating a user-centric solution to bridge communication gaps and promote inclusivity.",
+      "device": "Mobile",
+      "builtWith": ["Figma", "Canva Pro", "ClickUp"]
     },
     {
       "year": "2022",
@@ -15,8 +16,9 @@
       "name": "Comphy (Community Photography)",
       "role": "Front End Developer",
       "organization": "SYNRGY Academy Batch Grab",
-      "description": "Designing a suitable mobile sapp for children with Autism Spectrum Disorder that has a trouble in communication.",
-      "device": "Web"
+      "description": "Developed a community-based web app for a bootcamp final project, focused on photography. The platform connects enthusiasts to share, explore, and engage with visual content, highlighting teamwork in web development.",
+      "device": "Web",
+      "builtWith": ["Next.js", "Tailwind CSS", "JavaScript", "Express"]
     },
     {
       "year": "2022",
@@ -24,8 +26,9 @@
       "name": "Eksplor Laweyan App",
       "role": "UI/UX Designer & Front End Developer",
       "organization": "Tarumanagara University",
-      "description": "Designing a suitable mobile sapp for children with Autism Spectrum Disorder that has a trouble in communication.",
-      "device": "Mobile"
+      "description": "Developed a mobile app as part of my thesis, inspired by a research collaboration. The project began with UI/UX design and culminated in a solution aligned with SDG 11: Sustainable Cities and Communities. Designed on a grand scale, it focused on Kampung Batik Laweyan in Solo, aiming to promote sustainable urban development and cultural preservation through digitalization",
+      "device": "Mobile",
+      "builtWith": ["React Native", "MongoDB", "TypeScript", "NodeJS"]
     }
   ]
 }
