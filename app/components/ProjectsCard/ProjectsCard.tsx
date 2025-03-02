@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowTurnDownRightIcon } from "@heroicons/react/16/solid";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,6 +17,9 @@ interface ProjectData {
   description: string;
   device: string;
   builtWith: string[];
+  link: string;
+  githubLink: string;
+  gitlabLink: string;
 }
 
 interface ProjectProps {
@@ -60,17 +64,71 @@ export default function ProjectsCard({ project }: ProjectProps) {
             {project.description}
           </p>
 
-          <p className="text-sm mb-2"> Built with: </p>
+          <div className="flex flex-col">
+            <div className="flex flex-col mb-3">
+              <p className="text-sm mb-2"> Built with: </p>
 
-          <div className="flex flex-wrap gap-2">
-            {project.builtWith.map((tech, index) => (
-              <p
-                key={index}
-                className="inline-flex items-center rounded-sm bg-[--darkerBackground] py-1.5 px-3 text-xs text-[--text-secondary] shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
-              >
-                {tech}
-              </p>
-            ))}
+              <div className="flex flex-wrap gap-2">
+                {project.builtWith.map((tech, index) => (
+                  <p
+                    key={index}
+                    className="inline-flex items-center rounded-sm bg-[--darkerBackground] py-1.5 px-3 text-xs text-[--text-secondary] shadow-white/10 focus:outline-none data-[hover]:bg-gray-600 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700"
+                  >
+                    {tech}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex items-center gap-x-3">
+              {project.githubLink !== "" ? (
+                <Link href={project.githubLink || ""} target="blank">
+                  <Image
+                    src={"/socials/github.svg"}
+                    alt="Github Logo"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+              ) : (
+                <></>
+              )}
+
+              {project.gitlabLink !== "" ? (
+                <Link href={project.gitlabLink || ""} target="blank">
+                  <Image
+                    src={"/socials/gitlab.svg"}
+                    alt="Gitlab Logo"
+                    width={45}
+                    height={45}
+                  />
+                </Link>
+              ) : (
+                <></>
+              )}
+
+              {project.link.includes("figma") ? (
+                <Link href={project.link || ""} target="blank">
+                  <Image
+                    src={"/socials/figma.svg"}
+                    alt="Figma Logo"
+                    width={35}
+                    height={35}
+                  />
+                </Link>
+              ) : project.link !== "" ? (
+                <Link href={project.link || ""} target="blank">
+                  <Image
+                    src={"/socials/link.svg"}
+                    alt="Link Logo"
+                    width={35}
+                    height={35}
+                  />
+                </Link>
+              ) : (
+                <></>
+              )}
+            </div>
           </div>
         </div>
       </div>

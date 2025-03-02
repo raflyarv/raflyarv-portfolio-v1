@@ -3,6 +3,7 @@ import ProjectsCard from "./ProjectsCard";
 import StickySectionHeader from "./StickySectionHeader";
 import ArchiveProjectsCard from "./ArchiveProjectsCard";
 import MainFooter from "./MainFooter";
+import ARVModalDialog from "./ARVModalDialog";
 
 export {
   ExperienceCard,
@@ -10,4 +11,5 @@ export {
   StickySectionHeader,
   ArchiveProjectsCard,
   MainFooter,
+  ARVModalDialog,
 };

@@ -1,4 +1,6 @@
+import { ArrowUpRightIcon } from "@heroicons/react/16/solid";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,6 +18,7 @@ interface ExperienceData {
   company: string;
   description: string;
   builtWith: string[];
+  companyWebsite: string;
 }
 
 interface ExperienceProps {
@@ -86,10 +89,29 @@ export default function ExperienceCard({
 
         {/* Job Details */}
         <div className="lg:w-[70%]">
-          <p className={`mb-1 text-lg font-bold text-white ${inter.className}`}>
-            {experience.position}{" "}
-            <span className="text-[--foreground]">@ {experience.company}</span>
-          </p>
+          <div className="flex items-start">
+            <p
+              className={`mb-1 text-lg font-bold text-white ${inter.className}`}
+            >
+              {experience.position}{" "}
+              <span className="inline-flex group relative text-[--foreground]">
+                {experience.companyWebsite !== "" ? (
+                  <Link
+                    className="inline-flex relative"
+                    href={experience.companyWebsite || ""}
+                    target="blank"
+                  >
+                    @ {experience.company}
+                    <span className="absolute bottom-0 left-0 h-0.5 bg-[--foreground] w-0 transition-all duration-300 group-hover:w-full"></span>
+                    <ArrowUpRightIcon className="size-4 self-center group-hover:-translate-y-1 transition-all duration-300" />
+                  </Link>
+                ) : (
+                  <></>
+                )}
+              </span>
+            </p>
+          </div>
+
           <p className={`mb-3 text-[--text-secondary] ${inter.className}`}>
             {experience.description}
           </p>

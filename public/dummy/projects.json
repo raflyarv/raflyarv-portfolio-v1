@@ -8,7 +8,10 @@
       "organization": "Tarumanagara University",
       "description": "A mobile application tailored for children and young adults with Autism Spectrum Disorder (ASD) who face communication challenges. This app integrates the Fitzgerald Color System, ensuring a structured and visual approach to language development. The design was shaped by FGDs with linguistics and psychology experts, creating a user-centric solution to bridge communication gaps and promote inclusivity.",
       "device": "Mobile",
-      "builtWith": ["Figma", "Canva Pro", "ClickUp"]
+      "builtWith": ["Figma", "Canva Pro", "ClickUp"],
+      "githubLink": "",
+      "gitlabLink": "",
+      "link": "https://www.figma.com/design/jA9zfdrxuTFwbU8UC3mH4c/Vicara-3.0-%5BRafly%5D---SlateARV?node-id=51-158&t=s9v2OyuJ2nZeQFRR-1"
     },
     {
       "year": "2022",
@@ -18,7 +21,10 @@
       "organization": "SYNRGY Academy Batch Grab",
       "description": "Developed a community-based web app for a bootcamp final project, focused on photography. The platform connects enthusiasts to share, explore, and engage with visual content, highlighting teamwork in web development.",
       "device": "Web",
-      "builtWith": ["Next.js", "Tailwind CSS", "JavaScript", "Express"]
+      "builtWith": ["Next.js", "Tailwind CSS", "JavaScript", "Express"],
+      "githubLink": "",
+      "gitlabLink": "https://gitlab.com/raflyarv/comphy-fe",
+      "link": "https://comphy.vercel.app/"
     },
     {
       "year": "2022",
@@ -28,7 +34,10 @@
       "organization": "Tarumanagara University",
       "description": "Developed a mobile app as part of my thesis, inspired by a research collaboration. The project began with UI/UX design and culminated in a solution aligned with SDG 11: Sustainable Cities and Communities. Designed on a grand scale, it focused on Kampung Batik Laweyan in Solo, aiming to promote sustainable urban development and cultural preservation through digitalization",
       "device": "Mobile",
-      "builtWith": ["React Native", "MongoDB", "TypeScript", "NodeJS"]
+      "builtWith": ["React Native", "MongoDB", "TypeScript", "NodeJS"],
+      "githubLink": "https://github.com/raflyarv/eksplor-laweyan",
+      "gitlabLink": "",
+      "link": "https://www.figma.com/design/39KJiCI1vsUTY1Jc7K8Eza/Laweyan-App?node-id=80-318&t=b0MBkbgGQ9VvZdJy-1"
     }
   ]
 }

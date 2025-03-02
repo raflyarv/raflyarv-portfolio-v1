@@ -24,7 +24,7 @@
         "MongoDB",
         "NodeJS"
       ],
-      "githubLink": "",
+      "githubLink": "https://github.com/raflyarv/laweyan-admin",
       "link": ""
     },
     {
@@ -32,16 +32,16 @@
       "subtitle": "Part of Web Development Uni Course",
       "description": "Consists of duplicate and modified Colorlib's Travelo web mockup with a travel agency which i freelancing to, Evanindo Wisata. Using mostly HTML, pure CSS, and a little bit of Javascript as a main qualification to pass this project.",
       "builtWith": ["HTML", "CSS", "JavaScript"],
-      "githubLink": "",
-      "link": ""
+      "githubLink": "https://github.com/raflyarv/MidtermWebMockup",
+      "link": "https://raflyarv.github.io/MidtermWebMockup/"
     },
     {
       "title": "FTI Access Mobile App",
       "subtitle": "Part of Software Development Uni Course",
-      "description": "Lorem ipsum bla bla bla nanti diisi ya pake data yang bener hihihihi",
+      "description": "A UI/UX team designs a faculty portal app to simplify student access to information, schedules, and class modules, benchmarking similar apps for usability and creating a user-friendly, intuitive design.",
       "builtWith": ["Figma", "Canva Pro", "ClickUp"],
-      "githubLink": "",
-      "link": ""
+      "link": "https://www.figma.com/design/59NX4Hk8j7dE7JJ67D458S/App-FTI-Untar---Software-Development?node-id=0-1&t=jeAXjodW8xYefOM3-1",
+      "githubLink": ""
     }
   ]
 }

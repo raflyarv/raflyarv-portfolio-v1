@@ -31,8 +31,9 @@ export default function ExperienceSection() {
 
           <div className="flex items-center justify-between group">
             <Link
-              href="/experiences"
+              href="/rafly-resume.pdf"
               className="w-fit flex gap-x-1 transition-transform group-hover:scale-[1.02] group-hover:-translate-y-1 group-hover:translate-x-5 ease-in-out duration-300"
+              target="_blank"
             >
               <p className="text-sm group-hover:text-white transition-colors duration-300 relative">
                 View Full Resume

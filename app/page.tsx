@@ -2,25 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Inter, Martian_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import { ExperienceSection, ProjectSection } from "./sections";
-import { MainFooter, StickySectionHeader } from "./components";
+import { ARVModalDialog, MainFooter, StickySectionHeader } from "./components";
 import { useEffect, useState } from "react";
 import { CheckIcon } from "@heroicons/react/16/solid";
-import {
-  Description,
-  Dialog,
-  DialogBackdrop,
-  DialogPanel,
-  DialogTitle,
-} from "@headlessui/react";
 
 const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const mono = Martian_Mono({
   subsets: ["latin"],
   display: "swap",
 });
@@ -151,7 +139,7 @@ export default function Home() {
               alt="github-social"
               width={40}
               height={40}
-              className="opacity-70"
+              className="opacity-50 hover:opacity-90 transition-all transform ease-in-out duration-150"
             />
           </Link>
 
@@ -161,7 +149,7 @@ export default function Home() {
               alt="linkedin-social"
               width={40}
               height={40}
-              className="opacity-70"
+              className="opacity-50 hover:opacity-90 transition-all transform ease-in-out duration-150"
             />
           </Link>
 
@@ -171,7 +159,7 @@ export default function Home() {
               alt="instagram-social"
               width={40}
               height={40}
-              className="opacity-70"
+              className="opacity-50 hover:opacity-90 transition-all transform ease-in-out duration-150"
             />
           </Link>
 
@@ -185,7 +173,7 @@ export default function Home() {
               alt="mail-social"
               width={40}
               height={40}
-              className="opacity-70"
+              className="opacity-50 hover:opacity-90 transition-all transform ease-in-out duration-150"
             />
           </Link>
         </div>
@@ -196,7 +184,7 @@ export default function Home() {
         <section id="about-me" className="mb-10">
           <StickySectionHeader title="About Me" index={1} />
 
-          <div className="w-full flex flex-col items-start lg:flex-row gap-x-5 px-8">
+          <div className="w-full flex flex-col items-center lg:items-start lg:flex-row gap-x-5 px-8">
             <div
               className={`relative rounded-md lg:w-[65%] backdrop-blur-md py-2 px-1 text-justify lg:text-left lg:px-4 lg:mb-0 mb-10 text-wrap text-base font-semibold leading-7 text-[--text-secondary] ${inter.className}`}
             >
@@ -259,63 +247,7 @@ export default function Home() {
 
         <MainFooter />
 
-        <Dialog
-          open={isOpen}
-          onClose={() => setIsOpen(false)}
-          transition
-          className="relative z-50"
-        >
-          <DialogBackdrop
-            transition
-            className="fixed inset-0 bg-[#332941]/75 backdrop-blur-sm transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
-          />
-          <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-            <DialogPanel
-              transition
-              className={
-                "max-w-lg relative flex flex-col justify-center items-center transform overflow-hidden space-y-4 border border-[--foreground] bg-[--background]/70 backdrop-blur-lg rounded-md lg:p-12 p-8 transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
-              }
-            >
-              <DialogTitle
-                className={`w-fit justify-center ml-8 flex items-center -my-12 ${inter.className}`}
-              >
-                <p className="text-lg font-semibold"> WHAT IS </p>
-                <Image
-                  src={"/arv-trademark.svg"}
-                  alt="RaflyARV"
-                  width={150}
-                  height={150}
-                  className="-ml-10"
-                />
-              </DialogTitle>
-              <Description
-                className={`${inter.className} text-center text-[--text-secondary] font-semibold text-sm lg:text-base`}
-              >
-                {" "}
-                ARV in{" "}
-                <span
-                  className={`${mono.className} text-xs lg:text-sm font-normal`}
-                >
-                  {" "}
-                  raflyarv.com
-                </span>{" "}
-                is a creative twist on my pen name, an acronym for ARVIN,
-                seamlessly blending with my name, Rafly. By adding ARV, I’ve
-                crafted a unique branding signature that stands out—a personal
-                touch reflecting my contribution to a notable project.{" "}
-              </Description>
-              <div className="flex">
-                <button
-                  className={`${inter.className} inline-flex items-center gap-2 rounded-md bg-[--darkerBackground] py-1.5 px-3 text-base font-semibold text-white backdrop-blur-md focus:outline-none hover:bg-[--foreground] hover:text-[--background] transition-all duration-200`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {" "}
-                  Alrighty!{" "}
-                </button>
-              </div>
-            </DialogPanel>
-          </div>
-        </Dialog>
+        <ARVModalDialog isOpen={isOpen} setIsOpen={setIsOpen} />
       </main>
     </div>
   );

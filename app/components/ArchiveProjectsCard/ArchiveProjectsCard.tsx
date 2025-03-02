@@ -35,19 +35,37 @@ export default function ArchiveProjectsCard({
         />
 
         <div className="flex items-start gap-x-2">
-          <Link href={projectArchive.githubLink}>
-            <Image
-              alt="Folder"
-              src={"/socials/github.svg"}
-              width={25}
-              height={25}
-              className="text-[--text-secondary]"
-            />
-          </Link>
+          {projectArchive.githubLink !== "" ? (
+            <Link href={projectArchive.githubLink || ""}>
+              <Image
+                alt="Folder"
+                src={"/socials/github.svg"}
+                width={25}
+                height={25}
+                className="text-[--text-secondary]"
+              />
+            </Link>
+          ) : (
+            <> </>
+          )}
 
-          <Link href={projectArchive.link}>
-            <ArrowTopRightOnSquareIcon className="size-6 text-[--text-secondary]" />
-          </Link>
+          {projectArchive.link.includes("figma") ? (
+            <Link href={projectArchive.link || ""} target="blank">
+              <Image
+                src={"/socials/figma.svg"}
+                alt="Figma Logo"
+                width={30}
+                height={30}
+                className="hover:fill-[--foreground]"
+              />
+            </Link>
+          ) : projectArchive.link !== "" ? (
+            <Link href={projectArchive.link || ""}>
+              <ArrowTopRightOnSquareIcon className="size-6 text-[--text-secondary]" />
+            </Link>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
 

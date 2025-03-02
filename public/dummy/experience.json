@@ -14,28 +14,32 @@
         "Material UI",
         "Podman",
         "Red Hat OpenShift Container Platform"
-      ]
+      ],
+      "companyWebsite": "https://www.bca.co.id/"
     },
     {
       "period": { "start": "2023-08", "end": "2024-11" },
       "position": "UI/UX Designer (Research)",
       "company": "Tarumanagara University",
       "description": "Collaborated with multidisciplinary lecturers in a research initiative, successfully delivering two grand-scale projects within a span of 1 year. Responsibilities included conducting user research, creating wireframes and prototypes, and designing intuitive, user-focused interfaces aligned with project objectives and stakeholder needs.",
-      "builtWith": ["Figma", "ClickUp", "Canva Pro"]
+      "builtWith": ["Figma", "ClickUp", "Canva Pro"],
+      "companyWebsite": "https://untar.ac.id/"
     },
     {
       "period": { "start": "2023-08", "end": "2023-12" },
       "position": "Front End Programming Lab Instructor",
       "company": "Tarumanagara University",
       "description": "Guided 58 computer science students in essential web development languages: HTML, CSS, and Javascript. Provided a solid foundation in AngularJS as the primary web development framework.",
-      "builtWith": ["HTML", "CSS", "AngularJS", "JavaScript"]
+      "builtWith": ["HTML", "CSS", "AngularJS", "JavaScript"],
+      "companyWebsite": "https://fti.untar.ac.id/"
     },
     {
       "period": { "start": "2023-08", "end": "2023-12" },
       "position": "Web Development Lab Instructor",
       "company": "Tarumanagara University",
       "description": "Instructed 125 students in UI/UX design through across diverse faculties through drag-and-drop website editing. Successfully Demonstrated digital transformation in various industries through student projects involved direct interaction with SMEs.",
-      "builtWith": ["Figma", "Wix Website Builder", "HTML", "CSS"]
+      "builtWith": ["Figma", "Wix Website Builder", "HTML", "CSS"],
+      "companyWebsite": "https://fti.untar.ac.id/"
     },
     {
       "period": { "start": "2023-08", "end": "2023-12" },
@@ -47,7 +51,8 @@
         "Oracle SQL Developer",
         "Linux",
         "VirtualBox"
-      ]
+      ],
+      "companyWebsite": "https://fti.untar.ac.id/"
     }
   ]
 }
