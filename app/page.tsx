@@ -7,7 +7,7 @@ import { ExperienceSection, ProjectSection } from "./sections";
 import { ARVModalDialog, MainFooter, StickySectionHeader } from "./components";
 import { useEffect, useState } from "react";
 import { CheckIcon } from "@heroicons/react/16/solid";
-import profilePic from "@/public/profile-pic/original.svg";
+import profilePic from "@/public/profile-pic/original.png";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -181,7 +181,7 @@ export default function Home() {
       </aside>
 
       {/* Right Column */}
-      <main className="relative w-full min-h-screen lg:p-14 overflow-visible">
+      <main className="relative w-full min-h-screen py-8 lg:p-14 overflow-visible">
         <section id="about-me" className="mb-10">
           <StickySectionHeader title="About Me" index={1} />
 
