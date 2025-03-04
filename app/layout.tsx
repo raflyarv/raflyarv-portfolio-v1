@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Martian_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 // const inter = Inter({
@@ -38,6 +39,7 @@ export default function RootLayout({
         className={` ${martianMono.className} antialiased m-0 p-0 w-full h-full min-w-screen min-h-screen`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

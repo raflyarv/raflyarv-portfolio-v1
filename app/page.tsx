@@ -7,6 +7,7 @@ import { ExperienceSection, ProjectSection } from "./sections";
 import { ARVModalDialog, MainFooter, StickySectionHeader } from "./components";
 import { useEffect, useState } from "react";
 import { CheckIcon } from "@heroicons/react/16/solid";
+import profilePic from "@/public/profile-pic/original.svg";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -225,7 +226,10 @@ export default function Home() {
               {/* Image */}
               <div className="relative z-5">
                 <Image
-                  src={"/profile-pic/original.svg"}
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP88TSyHgAHygK3vy14DgAAAABJRU5ErkJggg=="
+                  priority
+                  src={profilePic}
                   alt="Profile"
                   width={300}
                   height={300}

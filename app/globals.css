@@ -2,23 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #f8e559;
   --foreground: #332941;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #332941;
-    --foreground: #f8e559;
+:root {
+  --background: #332941;
+  --foreground: #f8e559;
 
-    --darkerBackground: #271d37;
+  --darkerBackground: #271d37;
 
-    --plainBackground: rgba(255, 255, 255, 0.2);
+  --plainBackground: rgba(255, 255, 255, 0.2);
 
-    --text-primary: rgba(255, 255, 255);
-    --text-secondary: rgba(255, 255, 255, 0.8);
-  }
+  --text-primary: rgba(255, 255, 255);
+  --text-secondary: rgba(255, 255, 255, 0.8);
 }
 
 body {

@@ -20,6 +20,7 @@ interface ProjectData {
   link: string;
   githubLink: string;
   gitlabLink: string;
+  figmaLink: string;
 }
 
 interface ProjectProps {
@@ -36,6 +37,7 @@ export default function ProjectsCard({ project }: ProjectProps) {
    }`}
       >
         <Image
+          priority
           src={project.previewImg}
           alt={project.name}
           className={`transition lg:w-[30%] w-[75%] group-hover:lg:scale-125 ease-in-out mb-7 lg:mb-0 ${
@@ -107,8 +109,8 @@ export default function ProjectsCard({ project }: ProjectProps) {
                 <></>
               )}
 
-              {project.link.includes("figma") ? (
-                <Link href={project.link || ""} target="blank">
+              {project.figmaLink !== "" ? (
+                <Link href={project.figmaLink || ""} target="blank">
                   <Image
                     src={"/socials/figma.svg"}
                     alt="Figma Logo"
@@ -116,7 +118,11 @@ export default function ProjectsCard({ project }: ProjectProps) {
                     height={35}
                   />
                 </Link>
-              ) : project.link !== "" ? (
+              ) : (
+                <></>
+              )}
+
+              {project.link !== "" ? (
                 <Link href={project.link || ""} target="blank">
                   <Image
                     src={"/socials/link.svg"}

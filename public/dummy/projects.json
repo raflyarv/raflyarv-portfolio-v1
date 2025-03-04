@@ -11,7 +11,8 @@
       "builtWith": ["Figma", "Canva Pro", "ClickUp"],
       "githubLink": "",
       "gitlabLink": "",
-      "link": "https://www.figma.com/design/jA9zfdrxuTFwbU8UC3mH4c/Vicara-3.0-%5BRafly%5D---SlateARV?node-id=51-158&t=s9v2OyuJ2nZeQFRR-1"
+      "link": "https://vicara.id/",
+      "figmaLink": "https://www.figma.com/design/jA9zfdrxuTFwbU8UC3mH4c/Vicara-3.0-%5BRafly%5D---SlateARV?node-id=51-158&t=s9v2OyuJ2nZeQFRR-1"
     },
     {
       "year": "2022",
@@ -24,6 +25,7 @@
       "builtWith": ["Next.js", "Tailwind CSS", "JavaScript", "Express"],
       "githubLink": "",
       "gitlabLink": "https://gitlab.com/raflyarv/comphy-fe",
+      "figmaLink": "",
       "link": "https://comphy.vercel.app/"
     },
     {
@@ -37,7 +39,8 @@
       "builtWith": ["React Native", "MongoDB", "TypeScript", "NodeJS"],
       "githubLink": "https://github.com/raflyarv/eksplor-laweyan",
       "gitlabLink": "",
-      "link": "https://www.figma.com/design/39KJiCI1vsUTY1Jc7K8Eza/Laweyan-App?node-id=80-318&t=b0MBkbgGQ9VvZdJy-1"
+      "figmaLink": "https://www.figma.com/design/39KJiCI1vsUTY1Jc7K8Eza/Laweyan-App?node-id=80-318&t=b0MBkbgGQ9VvZdJy-1",
+      "link": ""
     }
   ]
 }

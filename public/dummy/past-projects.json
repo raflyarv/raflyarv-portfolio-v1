@@ -42,6 +42,14 @@
       "builtWith": ["Figma", "Canva Pro", "ClickUp"],
       "link": "https://www.figma.com/design/59NX4Hk8j7dE7JJ67D458S/App-FTI-Untar---Software-Development?node-id=0-1&t=jeAXjodW8xYefOM3-1",
       "githubLink": ""
+    },
+    {
+      "title": "COSRX Mobile App",
+      "subtitle": "Part of Enterprise Database Uni Course",
+      "description": "A reimagined COSRX app integrates features from similar beauty apps and the COSRX web platform, using User Centered Design (UCD) principles to create a seamless, user-friendly experience for product discovery and shopping.",
+      "builtWith": ["Figma", "Canva Pro"],
+      "link": "https://www.figma.com/design/cmg6KU3kDghGHjNZ3K8LEg/UI-COSRX?node-id=0-1&t=PnW4mR4r54OgNxhf-1",
+      "githubLink": ""
     }
   ]
 }
