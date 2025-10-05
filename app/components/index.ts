@@ -4,6 +4,11 @@ import StickySectionHeader from "./StickySectionHeader";
 import ArchiveProjectsCard from "./ArchiveProjectsCard";
 import MainFooter from "./MainFooter";
 import ARVModalDialog from "./ARVModalDialog";
+import VerticalSnapCarousel from "./VerticalSnapCarousel";
+import InformationPoints from "./InformationPoints";
+
+import NavigationBar from "./_common/NavigationBar";
+
 
 export {
   ExperienceCard,
@@ -12,4 +17,7 @@ export {
   ArchiveProjectsCard,
   MainFooter,
   ARVModalDialog,
+  VerticalSnapCarousel,
+  InformationPoints,
+  NavigationBar
 };

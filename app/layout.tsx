@@ -3,26 +3,18 @@ import { Martian_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
+import { TabsProvider } from "./hooks/TabsContext";
+import localFont from "next/font/local";
 
-// const inter = Inter({
-//   subsets: ['latin'],
-//   display: 'swap'
-// })
+const localMono = localFont({
+  src: "/static/fonts/MartianMono-VariableFont_wdth,wght.ttf",
+});
 
 const martianMono = Martian_Mono({
   subsets: ["latin"],
   display: "swap",
+  fallback: ["localMono"],
 });
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "RaflyARV",
@@ -37,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={` ${martianMono.className} antialiased m-0 p-0 w-full h-full min-w-screen min-h-screen`}
+        className={` ${martianMono.className} RobotoMono antialiased m-0 p-0 w-full h-full min-w-screen min-h-screen`}
       >
-        {children}
+        <TabsProvider defaultIndex={1}>{children}</TabsProvider>
         <Analytics />
         <SpeedInsights />
       </body>

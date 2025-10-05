@@ -7,6 +7,14 @@
   --foreground: #332941;
 } */
 
+@font-face {
+  font-family: 'RobotoMono';
+  src: url('static/fonts/RobotoMono-VariableFont_wght.ttf'), 
+  url('static/fonts/RobotoMono-Italic-VariableFont_wght.ttf');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --background: #332941;
   --foreground: #f8e559;
@@ -34,4 +42,9 @@ body {
 .no-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: 0;  /* Firefox */
+}
+
+.project-background {
+  /* background: #CBEB7B; */
+  background: radial-gradient(circle, rgba(203, 235, 123, 1) 20%, rgba(187, 170, 209, 1) 100%);
 }
