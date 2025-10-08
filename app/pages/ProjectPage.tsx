@@ -37,7 +37,7 @@ const projectData = [
 
   {
     id: 2,
-    title: "Eksplor Laweyan",
+    title: "Eksplor Laweyan 12",
     subtitle: "Mobile App",
     role: "UI/UX Designer & Developer",
     affiliation: "Tarumanagara University",
